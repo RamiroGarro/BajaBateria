@@ -1,0 +1,22 @@
+/*Estilo para cuando no tenga batería*/
+body.low-battery .content {
+    animation: none;
+    color: black;
+    background-color: lightgray;
+}
+
+/*Estilo para cuando si tenga batería*/
+body .content {
+    animation: colorChange 5s infinite;
+    color: green;
+    background-color: rgb(44, 41, 41);
+}
+
+@keyframes colorChange {
+    25% {
+        color: red;
+    }
+    75% {
+        color: blue;
+    }
+}
